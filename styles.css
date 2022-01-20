@@ -1,0 +1,178 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background-color: white;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+#main-header {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e2001a;
+    padding: 0 3%;
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.menu-btn {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none;
+}
+
+.menu-btn span {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+#main-header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#main-header li {
+    margin: 0 1rem;
+}
+
+#main-header nav a {
+    color: white;
+    font-size: 1.25rem;
+}
+
+#main-header nav a:hover {
+    color: rgb(163, 161, 157);
+}
+
+#side-drawer {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(29, 26, 27);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#side-drawer:target {
+  display: block;
+}
+
+#side-drawer header {
+  height: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 3%;
+}
+
+#side-drawer ul {
+  list-style: none;
+  margin: 0;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#side-drawer li {
+  margin: 1rem;
+}
+
+#side-drawer a {
+  color: rgb(253, 239, 213);
+  font-size: 2rem;
+}
+
+main h1 {
+    text-align: center;
+    color: rgb(5, 4, 2);
+    font-size: 3rem;
+}
+
+#latest-products {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+#kennzahlen ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8rem;
+    margin: 80px;
+    padding: 0;
+}
+
+.kennzahlen-item {
+    background-color: #e2001a;
+    border-radius: 6px;
+    overflow: hidden;
+    list-style: none;
+}
+
+.kennzahlen-item img {
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.kennzahlen-item-content {
+    padding: 1rem;
+    text-align: center;
+    font-size: 200%;
+}
+
+.kennzahlen-item h2 {
+  margin: 0 0 1rem 0;
+}
+
+h2 {
+  font-size: 2rem;
+  color: rgb(56, 55, 53);
+}
+
+.btn {
+    background-color: rgb(206, 202, 195);
+    color: white;
+    border-radius: 4px;
+    padding: 8px 24px;
+}
+
+.btn:hover {
+    background-color: rgb(182, 177, 172);
+}
+
+@media (max-width: 48rem) {
+  #main-header nav {
+    display: none;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+
+  main h1 {
+    font-size: 1.5rem;
+}
+
+  #kennzahlen ul {
+    grid-template-columns: 100%;
+  }
+
+}

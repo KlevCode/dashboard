@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dashboard für Teamleitungen</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart.js"></script>
+    <link href="chartStyle.css" rel="stylesheet">
+</head>
+<body>
+    <header id="main-header">
+        <a href="index.html" id="logo">TL-Dashboard der AA</a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="">Kennzahlen</a>
+                </li>
+                <li>
+                    <a href="">Teams</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#side-drawer" class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+    </header>
+
+    <aside id="side-drawer">
+      <header>
+        <a href="#" class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </header>
+      <nav>
+        <ul>
+          <li>
+              <a href="">Kennzahlen</a>
+          </li>
+          <li>
+              <a href="">Teams</a>
+          </li>
+      </ul>
+      </nav>
+    </aside>
+
+    <main>
+        <h1>Kennzahlen DL-Versprechen<br>Gesamtübersicht</h1>
+        <section id="kennzahlen">
+            <ul>
+                <li class="kennzahlen-item">
+                    <article>
+                        <canvas id="myChart" alt="Erstgespräche"></canvas>
+                        <div class="kennzahlen-item-content">
+                            <h2>Erstgespräche</h2>
+                            <a href="" class="btn">Daten ansehen</a>
+                        </div>
+                    </article>
+                </li>
+                <li class="kennzahlen-item">
+                    <article>
+                      <canvas id="fgChart" alt="Folgegespräche"></canvas>
+                        <div class="kennzahlen-item-content">
+                            <h2>Folgegespräche</h2>
+                            <a href="" class="btn">Daten ansehen</a>
+                        </div>
+                    </article>
+                </li>
+                <li class="kennzahlen-item">
+                  <article>
+                    <canvas id="evChart" alt="EV-Gültigkeit"></canvas>
+                      <div class="kennzahlen-item-content">
+                          <h2>EV-Gültigkeit</h2>
+                          <a href="" class="btn">Daten ansehen</a>
+                      </div>
+                  </article>
+              </li>
+              <li class="kennzahlen-item">
+                <article>
+                    <canvas id="idChart" alt="ID-Prüfungen"></canvas>
+                    <div class="kennzahlen-item-content">
+                        <h2>ID-Prüfungen</h2>
+                        <a href="" class="btn">Daten ansehen</a>
+                    </div>
+                </article>
+            </li>
+            </ul>
+        </section>
+        <div>
+
+        </div>
+
+
+        <script>
+          const myChart = new Chart(
+            document.getElementById('myChart'),
+            config
+          );
+        </script>
+        <script>
+          const fgChart = new Chart(
+            document.getElementById('fgChart'),
+            fgconfig
+          );
+        </script>
+
+    </main>
+</body>
+</html>
