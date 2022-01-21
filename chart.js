@@ -1,10 +1,10 @@
 const labels = [
-  'January',
-  'February',
-  'March',
-  'April',
-  'May',
-  'June',
+  'Team 01',
+  'Team 02',
+  'Team 03',
+  'Team 04',
+  'Team 05',
+  'Team 06',
 ];
 
 
