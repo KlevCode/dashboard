@@ -7,7 +7,9 @@ const labels = [
   'June',
 ];
 
-const data = {
+
+// Erstgespräche
+const egdata = {
   labels: labels,
   datasets: [{
     label: 'EG-Daten',
@@ -17,6 +19,14 @@ const data = {
   }]
 };
 
+const egconfig = {
+  type: 'line',
+  data: egdata,
+  options: {}
+};
+
+
+// Folgegespräche
 const fgdata = {
   labels: labels,
   datasets: [{
@@ -27,18 +37,42 @@ const fgdata = {
   }]
 };
 
-
-
-const config = {
-  type: 'line',
-  data: data,
-  options: {}
-};
-
 const fgconfig = {
   type: 'line',
   data: fgdata,
   options: {}
 };
 
+// EV-Gültigkeit
+const evdata = {
+  labels: labels,
+  datasets: [{
+    label: 'EV-Daten',
+    backgroundColor: 'rgb(255, 99, 132)',
+    borderColor: 'rgb(255, 99, 132)',
+    data: [0, 100, 5, 2, 220, 230, 145],
+  }]
+};
 
+const evconfig = {
+  type: 'line',
+  data: evdata,
+  options: {}
+};
+
+// ID-Prüfungen
+const iddata = {
+  labels: labels,
+  datasets: [{
+    label: 'EV-Daten',
+    backgroundColor: 'rgb(255, 99, 132)',
+    borderColor: 'rgb(255, 99, 132)',
+    data: [0, 100, 5, 2, 220, 230, 145],
+  }]
+};
+
+const idconfig = {
+  type: 'line',
+  data: iddata,
+  options: {}
+};

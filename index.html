@@ -60,7 +60,7 @@
             <ul>
                 <li class="kennzahlen-item">
                     <article>
-                        <canvas id="myChart" alt="Erstgespräche"></canvas>
+                        <canvas id="egChart" alt="Erstgespräche"></canvas>
                         <div class="kennzahlen-item-content">
                             <h2>Erstgespräche</h2>
                             <a href="" class="btn">Daten ansehen</a>
@@ -96,21 +96,38 @@
             </li>
             </ul>
         </section>
-        <div>
 
-        </div>
+        <!-- Chart-Skripte -->
 
-
+        <!-- Erstgespräche -->
         <script>
-          const myChart = new Chart(
-            document.getElementById('myChart'),
-            config
+          const egChart = new Chart(
+            document.getElementById('egChart'),
+            egconfig
           );
         </script>
+
+        <!-- Folgegespräche -->
         <script>
           const fgChart = new Chart(
             document.getElementById('fgChart'),
             fgconfig
+          );
+        </script>
+
+        <!-- EV-Gültigkeit -->
+        <script>
+          const evChart = new Chart(
+            document.getElementById('evChart'),
+            evconfig
+          );
+        </script>
+
+         <!-- ID-Prüfungen -->
+         <script>
+          const idChart = new Chart(
+            document.getElementById('idChart'),
+            idconfig
           );
         </script>
 
