@@ -106,11 +106,6 @@ main h1 {
     font-size: 3rem;
 }
 
-#latest-products {
-    width: 80%;
-    margin: 2rem auto;
-}
-
 #kennzahlen ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -135,7 +130,7 @@ main h1 {
 .kennzahlen-item-content {
     padding: 1rem;
     text-align: center;
-    font-size: 200%;
+    font-size: 120%;
 }
 
 .kennzahlen-item h2 {
@@ -145,6 +140,16 @@ main h1 {
 h2 {
   font-size: 2rem;
   color: rgb(56, 55, 53);
+}
+
+article {
+  background-color: white;
+}
+
+canvas {
+  padding: 15px;
+  margin: 10px;
+  background-color: white;
 }
 
 .btn {

@@ -12,7 +12,7 @@ const labels = [
 const egdata = {
   labels: labels,
   datasets: [{
-    label: 'EG-Daten',
+    label: 'Erstgespräche im Jahresverlauf',
     backgroundColor: 'rgb(255, 99, 132)',
     borderColor: 'rgb(255, 99, 132)',
     data: [0, 10, 60, 2, 20, 30, 45],
@@ -30,7 +30,7 @@ const egconfig = {
 const fgdata = {
   labels: labels,
   datasets: [{
-    label: 'EV-Daten',
+    label: 'Ausstehende Folgegespräche',
     backgroundColor: 'rgb(255, 99, 132)',
     borderColor: 'rgb(255, 99, 132)',
     data: [0, 100, 5, 2, 220, 230, 145],
@@ -38,7 +38,7 @@ const fgdata = {
 };
 
 const fgconfig = {
-  type: 'line',
+  type: 'bar',
   data: fgdata,
   options: {}
 };
@@ -50,12 +50,12 @@ const evdata = {
     label: 'EV-Daten',
     backgroundColor: 'rgb(255, 99, 132)',
     borderColor: 'rgb(255, 99, 132)',
-    data: [0, 100, 5, 2, 220, 230, 145],
+    data: [130, 100, 5, 2, 220, 23, 45],
   }]
 };
 
 const evconfig = {
-  type: 'line',
+  type: 'bar',
   data: evdata,
   options: {}
 };
@@ -64,7 +64,7 @@ const evconfig = {
 const iddata = {
   labels: labels,
   datasets: [{
-    label: 'EV-Daten',
+    label: 'Ausstehende ID-Prüfungen',
     backgroundColor: 'rgb(255, 99, 132)',
     borderColor: 'rgb(255, 99, 132)',
     data: [0, 100, 5, 2, 220, 230, 145],
