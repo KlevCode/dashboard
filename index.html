@@ -16,17 +16,17 @@
 </head>
 <body>
     <header id="main-header">
-        <a href="index.html" id="logo">TL-Dashboard der AA</a>
+        <a href="index.html" id="logo">Dashboard</a>
         <nav>
-            <ul>
-                <li>
-                    <a href="">Kennzahlen</a>
-                </li>
-                <li>
-                    <a href="">Teams</a>
-                </li>
-            </ul>
-        </nav>
+          <ul>
+              <li>
+                  <a href="">Kennzahlen</a>
+              </li>
+              <li>
+                  <a href="">Teams</a>
+              </li>
+          </ul>
+      </nav>
         <a href="#side-drawer" class="menu-btn">
           <span></span>
           <span></span>
@@ -55,14 +55,14 @@
     </aside>
 
     <main>
-        <h1>Kennzahlen DL-Versprechen<br>Gesamtübersicht</h1>
+        <h1>Kennzahlen<br>Gesamtübersicht</h1>
         <section id="kennzahlen">
             <ul>
                 <li class="kennzahlen-item">
                     <article>
                         <canvas id="egChart" alt="Erstgespräche"></canvas>
                         <div class="kennzahlen-item-content">
-                            <a href="" class="btn">Daten Erstgespräche ansehen</a>
+                            <a href="" class="btn">Daten ansehen</a>
                         </div>
                     </article>
                 </li>
@@ -70,7 +70,7 @@
                     <article>
                       <canvas id="fgChart" alt="Folgegespräche"></canvas>
                         <div class="kennzahlen-item-content">
-                            <a href="" class="btn">Daten Folgegespräche ansehen</a>
+                            <a href="" class="btn">Daten ansehen</a>
                         </div>
                     </article>
                 </li>
@@ -78,24 +78,31 @@
                   <article>
                     <canvas id="evChart" alt="EV-Gültigkeit"></canvas>
                       <div class="kennzahlen-item-content">
-                          <a href="" class="btn">Daten EV ansehen</a>
+                          <a href="" class="btn">Daten ansehen</a>
                       </div>
                   </article>
               </li>
               <li class="kennzahlen-item">
                 <article>
-                    <canvas id="idChart" alt="ID-Prüfungen"></canvas>
+                    <canvas id="efChart" alt="Daten XZ"></canvas>
                     <div class="kennzahlen-item-content">
-                        <a href="" class="btn">Daten ID-Prüfungen ansehen</a>
+                      <a href="" class="btn">Daten ansehen</a>
                     </div>
                 </article>
-            </li>
+              </li>
+              <li class="kennzahlen-item">
+                <article>
+                    <canvas id="idChart" alt="ID-Prüfungen"></canvas>
+                    <div class="kennzahlen-item-content">
+                    </div>
+                </article>
+              </li>
             </ul>
         </section>
 
         <!-- Chart-Skripte -->
 
-        <!-- Erstgespräche -->
+        <!-- Datensatz X -->
         <script>
           const egChart = new Chart(
             document.getElementById('egChart'),
@@ -103,7 +110,7 @@
           );
         </script>
 
-        <!-- Folgegespräche -->
+        <!-- Datensatz Y -->
         <script>
           const fgChart = new Chart(
             document.getElementById('fgChart'),
@@ -111,7 +118,7 @@
           );
         </script>
 
-        <!-- EV-Gültigkeit -->
+        <!-- Datensatz XY -->
         <script>
           const evChart = new Chart(
             document.getElementById('evChart'),
@@ -119,7 +126,15 @@
           );
         </script>
 
-         <!-- ID-Prüfungen -->
+         <!-- XZ-Daten -->
+         <script>
+          const idChart = new Chart(
+            document.getElementById('efChart'),
+            efconfig
+          );
+        </script>
+
+         <!-- Datensatz Z -->
          <script>
           const idChart = new Chart(
             document.getElementById('idChart'),
