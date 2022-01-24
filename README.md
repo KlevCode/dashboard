@@ -1,2 +1,2 @@
 # dashboard
-Dashboard für TLs, das alle relevanten Kennzahlen des DL-Versprechens übersichtlich darstellt
+Dashboard, das alle relevanten Kennzahlen einer Organisation übersichtlich darstellt. Nächster Schritt: automatischer Import von csv-Dateien. 
